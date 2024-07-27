@@ -1,0 +1,27 @@
+k9s:
+  liveViewAutoRefresh: false
+  refreshRate: 2
+  maxConnRetry: 5
+  readOnly: false
+  ui:
+    enableMouse: false
+    headless: false
+    logoless: false
+    crumbsless: false
+    noIcons: false
+    reactive: true
+    skin: catppuccin-mocha
+  view:
+    active: pod
+  shellPod:
+    # The shell pod image to use.
+    image: busybox:1.35.0
+    # The resource limit to set on the shell pod.
+    limits:
+      cpu: 100m
+      memory: 100Mi
+    # Enable TTY
+    tty: true
+
+
+
